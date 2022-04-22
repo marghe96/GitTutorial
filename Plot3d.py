@@ -20,10 +20,10 @@ X, Y = np.meshgrid(X, Y)
  
 # Z 2D grid for the plot
 R = np.sqrt(X**2 + Y**2)
-Z = np.sin(R)
+Z = np.cos(R)
  
 # plot the surface.
-surf = ax.plot_surface(X, Y, Z, cmap='magma',linewidth=0, antialiased=True)
+surf = ax.plot_surface(X, Y, Z, cmap='viridis',linewidth=0, antialiased=True)
  
 # Customize the z axis.
 ax.set_zlim(-1.01, 1.01)
